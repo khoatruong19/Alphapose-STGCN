@@ -1,6 +1,6 @@
-<h1> Human Falling Detection and Tracking </h1>
+<h1> Fall Detection with AlphaPose & ST-GCN</h1>
+Root directory or source code belong to [GajuuzZ](https://github.com/GajuuzZ)
 
-Using Tiny-YOLO oneclass to detect each person in the frame and use 
 [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) to get skeleton-pose and then use
 [ST-GCN](https://github.com/yysijie/st-gcn) model to predict action from every 30 frames 
 of each person tracks.
@@ -15,8 +15,6 @@ Which now support 7 actions: Standing, Walking, Sitting, Lying Down, Stand up, S
 
 - Python > 3.6
 - Pytorch > 1.3.1
-
-Original test run on: i7-8750H CPU @ 2.20GHz x12, GeForce RTX 2070 8GB, CUDA 10.2
 
 ## Data
 
@@ -36,13 +34,11 @@ frames by hand for training ST-GCN model.
 [resnet50](https://drive.google.com/file/d/1IPfCDRwCmQDnQy94nT1V-_NVtTEi4VmU/view?usp=sharing)
 - ST-GCN action recognition - [tsstg](https://drive.google.com/file/d/1mQQ4JHe58ylKbBqTjuKzpwN2nwKOWJ9u/view?usp=sharing)
 
-## Basic Use
-
-1. Download all pre-trained models into ./Models folder.
-2. Run main.py
-```
-    python main.py ${video file or camera source}
-```
+## How to run this project?
+- Step 1: Clone the project
+- Step 2: [Download all the models](https://drive.google.com/drive/folders/1lrTI56k9QiIfMJhG9kzNjBzJh98KCIIO) into "Models" folder
+- Step 3: Download all packages
+- Step 4: Run project by command "python main.py --camera 0"
 
 ## Reference
 
